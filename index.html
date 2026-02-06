@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AssistTech - Votre partenaire informatique à Nice</title>
+    <meta name="description" content="AssistTech : Assistance, maintenance et dépannage informatique pour particuliers et petites entreprises à Nice. Service de confiance, local et professionnel.">
+    
+    <!-- Google Fonts: Poppins (Modern & Clean) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons (Phosphor Icons for modern look) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- GSAP (GreenSock Animation Platform) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <noscript>
+        <style>
+            .reveal { opacity: 1 !important; transform: none !important; }
+        </style>
+    </noscript>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Assist<span class="highlight">Tech</span></a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">À propos</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#why-us" class="nav-link">Pourquoi nous</a></li>
+                    <li><a href="#contact" class="nav-link btn-contact">Contact</a></li>
+                    <li class="nav-indicator-wrapper"><div class="nav-indicator"></div></li>
+                </ul>
+                <div class="nav-close" id="nav-close">
+                    <i class="ph ph-x"></i>
+                </div>
+            </nav>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="ph ph-list"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title reveal">Votre partenaire informatique de confiance à <span class="highlight-text">Nice</span></h1>
+                <p class="hero-subtitle reveal reveal-delay-1"><span id="typewriter"></span></p>
+                <a href="#contact" class="btn btn-primary reveal reveal-delay-2">Contactez AssistTech</a>
+            </div>
+            <div class="hero-image reveal reveal-delay-3">
+                <!-- Abstract tech shape or illustration via CSS/SVG can go here, or a clean image placeholder -->
+                <div class="tech-shape"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about bg-pattern-dots" id="about">
+        <div class="container about-container">
+            <div class="about-data reveal">
+                <h2 class="section-title">À propos d'AssistTech</h2>
+                <p class="about-description">
+                    Basée au cœur de Nice, <strong>AssistTech</strong> est une micro-entreprise dédiée à rendre l'informatique accessible et sereine. 
+                    Nous croyons que la technologie doit être un outil, pas une contrainte.
+                </p>
+                <p class="about-description">
+                    Avec une approche humaine et pédagogique, nous accompagnons particuliers et professionnels dans la résolution de leurs problèmes quotidiens. 
+                    Notre mission : vous offrir un service de proximité, réactif et transparent.
+                </p>
+            </div>
+            <div class="about-visual reveal reveal-delay-2">
+                <i class="ph ph-handshake icon-large"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <h2 class="section-title center reveal">Nos Services</h2>
+            <p class="section-subtitle center reveal reveal-delay-1">Des solutions adaptées à vos besoins</p>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <article class="service-card reveal reveal-delay-1">
+                    <div class="service-icon">
+                        <i class="ph ph-wrench"></i>
+                    </div>
+                    <h3 class="service-title">Dépannage Informatique</h3>
+                    <p class="service-description">
+                        Réparation de pannes matérielles et logicielles. Suppression de virus, récupération de données et résolution de bugs.
+                    </p>
+                </article>
+
+                <!-- Service 2 -->
+                <article class="service-card reveal reveal-delay-2">
+                    <div class="service-icon">
+                        <i class="ph ph-rocket-launch"></i>
+                    </div>
+                    <h3 class="service-title">Optimisation & Entretien</h3>
+                    <p class="service-description">
+                        Nettoyage de votre PC/Mac pour retrouver sa rapidité d'origine. Mises à jour et sécurisation de votre système.
+                    </p>
+                </article>
+
+                <!-- Service 3 -->
+                <article class="service-card reveal reveal-delay-3">
+                    <div class="service-icon">
+                        <i class="ph ph-desktop"></i>
+                    </div>
+                    <h3 class="service-title">Installation & Configuration</h3>
+                    <p class="service-description">
+                        Installation de nouveaux équipements, imprimantes, réseaux Wi-Fi et logiciels. Mise en route de votre nouvel ordinateur.
+                    </p>
+                </article>
+
+                <!-- Service 4 -->
+                <article class="service-card reveal reveal-delay-4">
+                    <div class="service-icon">
+                        <i class="ph ph-code"></i>
+                    </div>
+                    <h3 class="service-title">Création de Sites Web</h3>
+                    <p class="service-description">
+                        Conception de sites vitrines modernes et responsives pour présenter votre activité et attirer de nouveaux clients.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section why-us bg-pattern-grid" id="why-us">
+        <div class="container">
+            <h2 class="section-title center reveal">Pourquoi choisir AssistTech ?</h2>
+            
+            <div class="features-grid">
+                <div class="feature-item reveal reveal-delay-1">
+                    <i class="ph ph-map-pin"></i>
+                    <h3>Proximité Locale</h3>
+                    <p>Intervention rapide à Nice et ses alentours.</p>
+                </div>
+                <div class="feature-item reveal reveal-delay-2">
+                    <i class="ph ph-shield-check"></i>
+                    <h3>Confiance</h3>
+                    <p>Un interlocuteur unique et dédié à votre satisfaction.</p>
+                </div>
+                <div class="feature-item reveal reveal-delay-3">
+                    <i class="ph ph-student"></i>
+                    <h3>Pédagogie</h3>
+                    <p>Nous vous expliquons les problèmes avec des mots simples.</p>
+                </div>
+                <div class="feature-item reveal reveal-delay-4">
+                    <i class="ph ph-currency-eur"></i>
+                    <h3>Transparence</h3>
+                    <p>Tarifs clairs et sans surprise. Devis gratuit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intervention Area -->
+    <section class="section area-section">
+        <div class="container area-container">
+            <div class="area-content reveal">
+                <h2 class="section-title">Zone d'intervention</h2>
+                <p>
+                    Nous intervenons à domicile ou sur site pour les particuliers et petites entreprises.
+                </p>
+                <ul class="area-list">
+                    <li><i class="ph ph-check-circle"></i> Nice Centre & Collines</li>
+                    <li><i class="ph ph-check-circle"></i> Villefranche-sur-Mer</li>
+                    <li><i class="ph ph-check-circle"></i> Saint-Laurent-du-Var</li>
+                    <li><i class="ph ph-check-circle"></i> Cagnes-sur-Mer</li>
+                </ul>
+            </div>
+            <div class="area-map-visual reveal reveal-delay-2">
+                <div class="loader">
+                    <span></span>
+                    <div class="loader-text">Nice</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container contact-container">
+            <div class="contact-info reveal">
+                <h2 class="section-title">Contactez-nous</h2>
+                <p class="contact-subtitle">Besoin d'aide ? N'hésitez pas à nous appeler ou à nous envoyer un message.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <i class="ph ph-phone-call"></i>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <a href="tel:+33600000000">06 00 00 00 00</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <i class="ph ph-envelope-simple"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:contact@assisttech.fr">contact@assisttech.fr</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="contact-form reveal reveal-delay-2" id="contact-form" action="https://formspree.io/f/xykdgqjz" method="POST">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Comment pouvons-nous vous aider ?" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary full-width">Envoyer le message</button>
+                <div id="form-message" style="display:none; margin-top: 1rem; padding: 1rem; border-radius: 8px; font-weight: 500; text-align: center;"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <a href="#" class="logo">Assist<span class="highlight">Tech</span></a>
+                <p>Votre expert informatique à Nice.</p>
+            </div>
+            <div class="footer-links">
+                <ul class="footer-list">
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Mentions Légales</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AssistTech. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
