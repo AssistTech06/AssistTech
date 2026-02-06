@@ -253,8 +253,7 @@ h1, h2, h3 {
 /* Typewriter Effect */
 .typewriter-text {
     border-right: 2px solid var(--secondary-color);
-    white-space: nowrap;
-    overflow: hidden;
+    white-space: normal; /* Allow wrapping on mobile */
     animation: blink 0.75s step-end infinite;
 }
 
@@ -899,6 +898,10 @@ h1, h2, h3 {
         font-size: 1.75rem;
     }
     
+    .service-card {
+        padding: 1.5rem;
+    }
+
     .contact-container {
         padding: 1.5rem;
     }
