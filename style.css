@@ -825,7 +825,12 @@ h1, h2, h3 {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 968px) {
+    /* Unstick Header on Mobile/Tablet */
+    .header {
+        position: absolute;
+    }
+
     /* Hide Magic Line on Mobile */
     .nav-indicator, .nav-indicator-wrapper {
         display: none;
